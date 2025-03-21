@@ -329,9 +329,149 @@ body::-webkit-scrollbar-track {
     }
 }
 
+.privacy-policy {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.policy-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.privacy-policy-section-title {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.privacy-policy-section-description, .privacy-policy-rights-instruction {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.privacy-policy-info-list, .privacy-policy-purpose-list, .privacy-policy-sharing-list, .privacy-policy-rights-list {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.privacy-policy-info-item, .privacy-policy-purpose-item, .privacy-policy-sharing-item, .privacy-policy-rights-item {
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .policy-title {
+        font-size: 1.5em;
+    }
+    
+    .privacy-policy-section-title {
+        font-size: 1.25em;
+    }
+
+    .privacy-policy-section-description {
+        font-size: 0.9em;
+    }
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+.terms-and-conditions {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.terms-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.terms-and-conditions-section-title {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.terms-and-conditions-section-description {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.terms-and-conditions-prohibited-activities {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.terms-and-conditions-prohibited-item {
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .terms-title {
+        font-size: 1.5em;
+    }
+    
+    .terms-and-conditions-section-title {
+        font-size: 1.25em;
+    }
+
+    .terms-and-conditions-section-description {
+        font-size: 0.9em;
+    }
+}
+
+.responsible-gaming {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.responsible-gaming-gaming-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.responsible-gaming-section-title {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.responsible-gaming-section-description {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.responsible-gaming-gaming-guidelines, .responsible-gaming-self-regulation-tools {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.responsible-gaming-guideline-item, .responsible-gaming-tool-item {
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .responsible-gaming-gaming-title {
+        font-size: 1.5em;
+    }
+    
+    .responsible-gaming-section-title {
+        font-size: 1.25em;
+    }
+
+    .responsible-gaming-section-description {
+        font-size: 0.9em;
+    }
+}
 
 
 
