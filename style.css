@@ -373,18 +373,6 @@ body::-webkit-scrollbar-track {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .terms-and-conditions {
     padding: 20px;
     margin-top: 50px;
@@ -531,6 +519,171 @@ body::-webkit-scrollbar-track {
         padding: 10px; 
     }
 }
+
+.hero-section {
+    margin-top: -30px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.hero-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 2em;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2em;
+    }
+
+    .hero-button {
+        padding: 8px 16px;
+    }
+
+}
+
+.hero__form {
+    background-color: transparent;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px rgba(255, 255, 255, 0.292);
+    padding: 30px;
+    width: 600px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+    .hero__form {
+        padding: 10px;
+        width: 90%;
+    }
+    .hero-title {
+       margin: 0;
+    }
+    
+    .hero-subtitle {
+        margin: 0;
+    }
+}
+.hero-flex-cont {
+    display: flex;
+    align-items: center;
+}
+input[type="tel"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+input[type="tel"]:focus {
+    border-color: #555555;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+.btn-hero {
+    background-color: #505050;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    font-size: 16px;
+}
+.btn-hero:hover {
+    background-color: #000000;
+    transform: translateY(-2px);
+}
+.hero__note {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+.hero__note a {
+    color: #fb0000;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+.hero__note a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #ff0000;
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+.hero__note a:hover::after {
+    width: 100%;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
