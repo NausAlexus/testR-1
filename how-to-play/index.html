@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/style.css" />
 
     <script src="/burgerMenu.js" defer></script>
+    <script src="/about.js" defer></script>
 
 </head>
 
@@ -36,6 +37,9 @@
                     <a class="nav-link nav-link-hover" href="/faq/">FAQ</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link nav-link-hover" href="/how-to-play/">How to play</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link nav-link-hover" href="/tournaments/">Tournaments</a>
                 </li>
                 <li class="nav-item">
@@ -46,7 +50,104 @@
     </header>
 
     <main class="how-play-content">
-
+        <section class="about-rummy">
+            <div class="about-rummy__container">
+                <div class="about-rummy__sidebar">
+                    <button class="about-rummy__button about-rummy__button--active" data-content="mission">Overview of the Game</button>
+                    <button class="about-rummy__button" data-content="gameplay">Building Sequences and Sets</button>
+                    <button class="about-rummy__button" data-content="community">Strategies for Advanced Players</button>
+                    <button class="about-rummy__button" data-content="compliance">Essential Tips for Winning</button>
+                    <button class="about-rummy__button" data-content="responsible">The History of Card Games</button>
+                    <button class="about-rummy__button" data-content="support">Get in Touch with Us</button>
+                </div>
+                <div class="about-rummy__content">
+                    <div class="about-rummy__text display-block" id="mission"> <!-- Initially displayed -->
+                        <h2 class="about-rummy__title">Overview of the Game</h2>
+                        <img src="/img/how-play/how-play-1.jpg" alt="Game Overview" class="about-rummy__image">
+                        <p>Become familiar with the core rules and step-by-step guidelines to excel at Rummy:</p>
+                        <p>Rummy can accommodate anywhere from 2 to 6 players using two standard decks. Each player is dealt 13 cards, and a wild card, which acts as a joker, is randomly chosen. Players take turns picking from the deck or the discard pile in order to form valid sequences and sets. Both the wild card and joker can contribute to creating impure sequences and sets. To declare your hand successfully, you must have at least two sequences, which must include one pure sequence. Once your cards are organized appropriately, you may declare.</p>
+                        <h3>Winning Strategies for Rummy</h3>
+                        <p>Mastering the rules is just the beginning; strategic play is critical. Here are several tips to help improve your game:</p>
+                        <ul>
+                            <li>Form a pure sequence as soon as possible—failure to do so prevents a valid declaration.</li>
+                            <li>Discard high-ranking cards such as Ace, King, Queen, and Jack, unless they assist in forming a sequence.</li>
+                            <li>Limit frequent picks from the discard pile as it might expose your strategy.</li>
+                            <li>Utilize wild cards effectively to complete sets and impure sequences, but be cautious as they cannot be utilized in forming pure sequences.</li>
+                            <li>Before you declare, verify your hand thoroughly to avoid an invalid declaration.</li>
+                        </ul>
+                        <h3>Important Terms in Rummy</h3>
+                        <ul>
+                            <li><strong>Playing Area:</strong> This is where 2 to 6 players engage in the game.</li>
+                            <li><strong>Wild Cards & Jokers:</strong> Every deck includes a printed joker plus one wild card chosen randomly.</li>
+                            <li><strong>Drawing & Discarding:</strong> Each player begins with 13 cards and selects one card from either the deck or the discard pile each turn, followed by discarding one card.</li>
+                            <li><strong>Card Organization:</strong> Organizing your cards is crucial for efficient formation of sequences.</li>
+                            <li><strong>Exiting the Match:</strong> Players can leave during the game, incurring point penalties based on the game stage—20 points for an early exit, 40 for a mid-game exit, and 80 for a late exit.</li>
+                            <li><strong>Invalid Declaration:</strong> Making a declaration without the necessary sequences and sets results in an automatic loss.</li>
+                        </ul>
+                    </div>
+                    <div class="about-rummy__text display-none" id="gameplay">
+                        <h2>Building Sequences and Sets</h2>
+                        <img src="/img/how-play/how-play-2.jpg" alt="Sequence & Set Formation" class="about-rummy__image">
+                        <p>Winning in RummyVortex centers on effectively creating sequences and sets. A sequence comprises three or more consecutive cards of the same suit, whereas a set involves three or four cards sharing the same rank but differing in suits.</p>
+                        <h3>Understanding Pure Sequences</h3>
+                        <p>A pure sequence is vital for a legitimate declaration. It consists of at least three consecutive cards of the same suit without any jokers applied. If you lack a pure sequence, your declaration cannot be validated.</p>
+                        <p>Creating a pure sequence early in the game boosts your chances for a successful declaration.</p>
+                        <h3>Exploring Impure Sequences</h3>
+                        <p>An impure sequence functions similarly to a pure sequence but allows for at least one joker to substitute a missing card. While these are valid, they cannot take the place of the required pure sequence.</p>
+                        <h3>Establishing Sets</h3>
+                        <p>A set consists of three or four cards of the same rank, differing in suit. Establishing sets not only diminishes your total score but also enhances your likelihood of making a valid declaration.</p>
+                        <h3>Strategic Considerations for Sequences and Sets</h3>
+                        <p>Here are helpful strategic considerations to improve your sequence and set building:</p>
+                        <ul>
+                            <li>Prioritize creating a pure sequence right from the start.</li>
+                            <li>Keep an eye on your opponents and refrain from unnecessary discards.</li>
+                            <li>Deploy jokers sensibly to finish sequences or sets.</li>
+                            <li>Take care to discard high-point cards promptly if they don't help your hand.</li>
+                        </ul>
+                    </div>
+                    <div class="about-rummy__text display-none" id="community">
+                        <h2>Strategies for Advanced Players</h2>
+                        <img src="/img/how-play/how-play-3.jpg" alt="Advanced Rummy Strategies" class="about-rummy__image">
+                        <p>To become proficient in RummyVortex, it’s essential to combine careful planning with flexible strategies. A skilled player carefully observes the moves of their opponents, making tactical adjustments throughout the game.</p>
+                        <h3>Build Your Foundation Quickly</h3>
+                        <p>Securing a pure sequence is critical; strive to create one as early as possible.</p>
+                        <h3>Handle High-Value Cards Cautiously</h3>
+                        <p>High-point cards can lead to penalties, so be strategic when keeping or discarding them if they don’t assist in forming sequences.</p>
+                        <h3>Learn from Your Opponents</h3>
+                        <p>Every card drawn or discarded by others offers helpful insights into their strategy.</p>
+                        <h3>Maximize the Use of Jokers</h3>
+                        <p>Use jokers thoughtfully to complete essential sequences, but do not use them for pure sequences.</p>
+                        <h3>Adjust Your Strategies as Needed</h3>
+                        <p>Being versatile is vital; adapt your gameplay as the round progresses.</p>
+                    </div>
+                    <div class="about-rummy__text display-none" id="compliance">
+                        <h2>Essential Tips for Winning</h2>
+                        <img src="/img/how-play/how-play-4.jpg" alt="Quick Winning Tips" class="about-rummy__image">
+                        <p>Here are some practical tips that can give you an advantage:</p>
+                        <ul>
+                            <li>Establish a pure sequence promptly.</li>
+                            <li>Remain flexible—be ready to modify your strategy as the game moves forward.</li>
+                            <li>Quickly get rid of high-point cards to minimize risks.</li>
+                            <li>Monitor the cards your opponents are discarding.</li>
+                            <li>Utilize the discard pile strategically, but avoid revealing your strategy.</li>
+                            <li>Regular practice will enhance your experience.</li>
+                        </ul>
+                    </div>
+                    <div class="about-rummy__text display-none" id="responsible">
+                        <h2>The History of Card Games</h2>
+                        <img src="/img/how-play/how-play-5.jpg" alt="History of Card Games" class="about-rummy__image">
+                        <p>The narrative of card games is rich and spans many cultures and centuries. In India, traditional card games were once beloved activities among royalty. These games were often emblematic of art, culture, and strategy.</p>
+                        <p>Today, RummyVortex celebrates this heritage by integrating timeless strategies with innovative gameplay, offering players an exciting and competitive environment.</p>
+                    </div>
+                    <div class="about-rummy__text display-none" id="support">
+                        <h2>Get in Touch with Us</h2>
+                        <img src="/img/how-play/how-play-6.jpg" alt="Customer Support" class="about-rummy__image">
+                        <p>At RummyVortex, we are committed to providing excellent customer service, available around the clock to address any questions or concerns you might have.</p>
+                        <p>You can reach us via email, phone, or live chat. Our goal is to resolve your inquiries swiftly and to enhance your overall experience based on your valuable feedback.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">

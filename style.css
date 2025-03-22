@@ -532,6 +532,18 @@ body::-webkit-scrollbar-track {
     justify-content: center;
     align-items: center;
 }
+.hero-section-2 {
+    margin-top: -30px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('img/hero-about.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .hero-overlay {
     position: absolute;
@@ -557,7 +569,7 @@ body::-webkit-scrollbar-track {
 .hero-subtitle {
     font-size: 1.5em;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 60px;
 }
 
 .hero-button {
@@ -603,6 +615,10 @@ body::-webkit-scrollbar-track {
     }
     .hero-title {
        margin: 0;
+    }
+
+    .hero-subtitle {
+        padding: 10px;
     }
     
     .hero-subtitle {
@@ -951,6 +967,170 @@ input[type="tel"]:focus {
     }
 }
 
+.rummy-features {
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rummy-features__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.rummy-features__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rummy-features__item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.rummy-features__icon {
+    margin-right: 10px;
+    color: #c72500; /* Customize your icon color */
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .rummy-features {
+        padding: 15px;
+    }
+
+    .rummy-features__title {
+        font-size: 20px;
+    }
+
+    .rummy-features__item {
+        font-size: 14px;
+    }
+
+    .rummy-features__icon {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rummy-features {
+        padding: 10px;
+    }
+
+    .rummy-features__title {
+        font-size: 18px;
+    }
+
+    .rummy-features__item {
+        font-size: 12px;
+    }
+
+    .rummy-features__icon {
+        font-size: 16px;
+    }
+}
+
+.about-rummy {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.about-rummy__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-rummy__sidebar {
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 80px;
+}
+
+.about-rummy__button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #921600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.about-rummy__button--active {
+    background-color: #da2100;
+}
+
+.about-rummy__content {
+    flex: 2;
+}
+
+.about-rummy__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-rummy__text {
+    display: none; /* Hidden by default, managed by JavaScript */
+}
+
+.about-rummy__text#mission {
+    display: block; /* Show this section by default */
+}
+
+.about-rummy__button-container {
+    margin-top: 20px;
+}
+
+.about-rummy__contact-button {
+    padding: 10px 20px;
+    background-color: #921600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+.about-rummy__image {
+    max-width: 100%; /* Prevents the image from exceeding the width of its container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Ensures there are no small spaces below the image */
+    margin: 0 auto; /* Centers the image */
+}
+
+@media (max-width: 730px) {
+    .about-rummy__container {
+        flex-direction: column;
+    }
+
+    .about-rummy__sidebar {
+        margin-right: 0;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+}
+
+.how-play-content {
+    margin-top: 50px;
+}
 
 
 
@@ -963,9 +1143,82 @@ input[type="tel"]:focus {
 
 
 
+.advantages-section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 120px;
+    margin-top: 40px;
+}
 
+.advantages-title {
+    text-align: center;
+    font-size: 38px;
+    color: #000000;
+    margin-bottom: 30px;
+}
 
+.advantage-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
+.advantage-image {
+    width: 50%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.advantage-text {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.advantage-subtitle {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.advantage-description {
+    font-size: 16px;
+    color: #000000;
+}
+
+.btn-vacancies {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 768px) {
+    .advantages-section {
+        padding: 40px 20px;
+    }
+    .advantage-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .advantage-image {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .advantage-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .revers-text {
+        flex-direction: column-reverse;
+    }
+}
 
 
 
@@ -1009,5 +1262,14 @@ input[type="tel"]:focus {
     }
     .RummyVortex-info-block:hover {
         transform: scale(1.02); /* Slight scale effect on hover */
+    }
+    .about-rummy__contact-button:hover {
+        background-color: #da2100;
+    }
+    .about-rummy__button:hover {
+        background-color: #da2100;
+    }
+    .btn-vacancies:hover {
+        background-color: rgb(105, 105, 105);
     }
 }
