@@ -1,46 +1,64 @@
 document.addEventListener('DOMContentLoaded', function() {
     const phoneInput = document.getElementById('phoneInput');
     const phoneError = document.getElementById('phoneError');
-    const registerForm = document.getElementById('register');
+    const checkbox = document.getElementById('saw');
+    const checkboxError = document.getElementById('checkboxError');
+    const registerBtn = document.getElementById('registerBtn');
 
-    // Restrict input to numbers only with a leading '+'
+    // Ограничение ввода (только цифры, + в начале, - между цифрами)
     phoneInput.addEventListener('keydown', function(event) {
         const firstInput = phoneInput.value.length === 0;
+        const currentValue = phoneInput.value;
 
-        // Allow: backspace, delete, tab, escape, enter and arrow keys
-        if (event.key === "Backspace" || event.key === "Delete" || 
-            event.key === "Tab" || event.key === "Escape" || 
-            event.key === "Enter" || event.key.startsWith("Arrow")) {
+        if (["Backspace", "Delete", "Tab", "Escape", "Enter"].includes(event.key) || event.key.startsWith("Arrow")) {
             return;
         }
-        // Prevent non-numeric input, but allow '+' at the start
+
         if (firstInput && event.key === '+') {
-            return; // Allow '+' if it's the first character
+            return;
         }
 
-        if ((event.key < '0' || event.key > '9')) {
-            event.preventDefault(); // Prevent anything that's not a number
+        if (event.key === '-' && /\d$/.test(currentValue)) {
+            return;
         }
-    });
 
-    // Prevent pasting non-numeric values
-    phoneInput.addEventListener('paste', function(event) {
-        const pasteData = (event.clipboardData || window.clipboardData).getData('text');
-        if (/[^0-9+]/.test(pasteData) || (pasteData.length > 1 && pasteData.startsWith('+'))) {
+        if (event.key < '0' || event.key > '9') {
             event.preventDefault();
         }
     });
 
-    // Form validation function
-    registerForm.addEventListener('submit', function(event) {
-        const phonePattern = /^\+?\d{10}$/; // 10-digit phone number validation (10 digits optionally prefixed by '+')
-        
-        // Validate input, allowing for leading '+'
+    // Запрещаем вставку недопустимых символов
+    phoneInput.addEventListener('paste', function(event) {
+        const pasteData = (event.clipboardData || window.clipboardData).getData('text');
+        if (!/^\+?\d+(-\d+)*$/.test(pasteData)) {
+            event.preventDefault();
+        }
+    });
+
+    // Валидация при клике на кнопку
+    registerBtn.addEventListener('click', function() {
+        const phonePattern = /^\+?\d+(-\d+)*$/;
+        let isValid = true;
+
+        // Проверка номера телефона
         if (!phonePattern.test(phoneInput.value)) {
-            phoneError.textContent = 'Please enter a valid phone number with an optional leading "+".';
-            event.preventDefault(); // Prevent form submission
+            phoneError.textContent = 'Please enter a valid phone number.';
+            isValid = false;
         } else {
-            phoneError.textContent = ''; 
+            phoneError.textContent = '';
+        }
+
+        // Проверка чекбокса
+        if (!checkbox.checked) {
+            checkboxError.textContent = 'You must agree to the terms and conditions.';
+            isValid = false;
+        } else {
+            checkboxError.textContent = '';
+        }
+
+        // Если все поля корректны
+        if (isValid) {
+            alert('The form has been successfully submitted!'); // Можно заменить на отправку данных
         }
     });
 });

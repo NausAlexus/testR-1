@@ -49,6 +49,42 @@
 
     <main class="contacts-content">
 
+
+        <section id="form" class="contact-form-section">
+            <div class="contact-form-container">
+                <div class="form-content">
+                <h1 class="whiteText">Leave Your Request</h1>
+                <form action="/thanks_form.php" method="post">
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required />
+    
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required />
+    
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Enter your comment"
+                    rows="5"
+                    required
+                  ></textarea>
+    
+                  <div class="checkbox">
+                    <input type="checkbox" id="privacy-policy" value="on" name="privacy" required />
+                    <label for="privacy-policy">
+                     I agree to the <a href="/privacy-policy/" target="_blank">Privacy Policy</a>
+                    </label>
+                  </div>
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+              <div class="form-image">
+                <img src="/img/contact/contact.jpg" alt="Contact Us" />
+              </div>
+
+            </div>
+          </section>
+
+
     </main>
 
     <footer class="footer">
@@ -60,6 +96,10 @@
                 <a href="/privacy-policy/">Privacy Policy</a>
                 <a href="/terms-conditions/">Terms And Conditions</a>
                 <a href="/responsible-gaming/">Responsible Gaming</a>
+            </div>
+            <div class="gam" >
+                <div class="cirle" >18+</div>
+                <a href="https://www.gamcare.org.uk/"><img class="img18" src="img/ga-care.png" alt="img" ></a>
             </div>
         </div>
         <p class="warn-18">This game is for 18+ players only. Play responsibly.</p>

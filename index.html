@@ -58,20 +58,25 @@
         <section class="hero-section">
             <div class="hero-overlay">
                 <h1 class="hero-title">Join the Adventure!</h1>
-                <p class="hero-subtitle">Welcome to RummyVortex, where the allure of rummy combines with the excitement of rivalry!</p>
-                <form id="register" action="thanks_form.php" method="post" class="hero__form">
-                    <input name="phone" type="tel" placeholder="Enter your phone number" required id="phoneInput">
+                <p class="hero-subtitle">
+                    Welcome to RummyVortex, where the allure of rummy combines with the excitement of rivalry!
+                </p>
+                
+                <div id="register" class="hero__form">
+                    <input name="phone" type="tel" placeholder="Enter your phone number" id="phoneInput">
                     <div class="error" id="phoneError"></div>
-                    
-                    <button type="submit" class="btn-hero">Get OTP</button>
+            
+                    <button type="button" id="registerBtn" class="btn-hero">Get OTP</button>
+            
                     <div class="hero-flex-cont">
-                        <input type="checkbox" name="checkbox" required id="saw">
+                        <input type="checkbox" name="checkbox" id="saw">
                         <p class="hero__note">
                             By continuing, you agree to our 
                             <a href="privacy-policy/">Privacy &amp; Policy</a>.
                         </p>
                     </div>
-                </form>
+                    <div class="error" id="checkboxError"></div>
+                </div>
             </div>
         </section>
         <section class="rummy-experience">
@@ -283,6 +288,10 @@
                 <a href="privacy-policy/">Privacy Policy</a>
                 <a href="terms-conditions/">Terms And Conditions</a>
                 <a href="responsible-gaming/">Responsible Gaming</a>
+            </div>
+            <div class="gam" >
+                <div class="cirle" >18+</div>
+                <a href="https://www.gamcare.org.uk/"><img class="img18" src="img/ga-care.png" alt="img" ></a>
             </div>
         </div>
         <p class="warn-18">This game is for 18+ players only. Play responsibly.</p>
