@@ -293,6 +293,8 @@ body::-webkit-scrollbar-track {
 
 .footer-links {
     margin-bottom: 15px; /* Space below links */
+    display: flex;
+    gap: 10px;
 }
 
 .footer-links a {
@@ -509,6 +511,7 @@ body::-webkit-scrollbar-track {
     .faq-section {
         margin: 10px; 
         padding: 15px; 
+        margin-top: 40px;
     }
 
     .faq-title {
@@ -1413,3 +1416,32 @@ input[type="tel"]:focus {
   .img18{
     max-width: 70px;
   }
+
+  .popup {
+    display: none; /* По умолчанию скрываем */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.807);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: rgb(233, 163, 163);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    max-width: 900px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 30px;
+}
