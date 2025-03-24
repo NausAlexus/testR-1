@@ -1,9 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const phoneInput = document.getElementById('phoneInput');
     const phoneError = document.getElementById('phoneError');
     const checkbox = document.getElementById('saw');
     const checkboxError = document.getElementById('checkboxError');
     const registerBtn = document.getElementById('registerBtn');
+    const form = document.getElementById('register');
 
     // Ограничение ввода (только цифры, + в начале, - между цифрами)
     phoneInput.addEventListener('keydown', function(event) {
@@ -36,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Валидация при клике на кнопку
-    registerBtn.addEventListener('click', function() {
+    registerBtn.addEventListener('click', function(event) {
         const phonePattern = /^\+?\d+(-\d+)*$/;
         let isValid = true;
 
@@ -57,8 +58,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Если все поля корректны
-        if (isValid) {
-            alert('The form has been successfully submitted!'); // Можно заменить на отправку данных
+        if (!isValid) {
+            event.preventDefault();
+        } else {
+            alert('The form has been successfully submitted!');
         }
     });
 });

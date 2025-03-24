@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const button = document.querySelector(".rummyVortex-online-button");
+    const button = document.querySelector(".RummyStrategyHub-online-button");
     const additionalParagraphs = document.querySelector(".additionalVortex-paragraphs");
 
     // Изначально скрываем дополнительные параграфы

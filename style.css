@@ -631,6 +631,7 @@ body::-webkit-scrollbar-track {
 .hero-flex-cont {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 input[type="tel"] {
     width: 100%;
@@ -655,6 +656,7 @@ input[type="tel"]:focus {
     transition: background-color 0.3s, transform 0.3s;
     width: 100%;
     font-size: 16px;
+    margin-top: 15px;
 }
 .btn-hero:hover {
     background-color: #000000;
@@ -662,7 +664,6 @@ input[type="tel"]:focus {
 }
 .hero__note {
     font-size: 14px;
-    margin-top: 10px;
     color: #ffffff;
 }
 .hero__note a {
@@ -680,7 +681,7 @@ input[type="tel"]:focus {
     transition: width 0.3s;
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: -10px;
 }
 .hero__note a:hover::after {
     width: 100%;
@@ -769,23 +770,23 @@ input[type="tel"]:focus {
     display: none;
 }
 
-.rummyVortex-online {
+.RummyStrategyHub-online {
     padding: 20px;
     background-color: #f9f9f9;
     text-align: left;
 }
 
-.rummyVortex-online-title {
+.RummyStrategyHub-online-title {
     font-size: 2rem;
     margin-bottom: 15px;
 }
 
-.rummyVortex-online-content {
+.RummyStrategyHub-online-content {
     margin-top: 10px;
 }
 
 /* Кнопка */
-.rummyVortex-online-button {
+.RummyStrategyHub-online-button {
     padding: 10px 15px;
     background-color: #ac0000;
     color: #fff;
@@ -928,14 +929,14 @@ input[type="tel"]:focus {
     margin-bottom: 5px;
 }
 
-.RummyVortex-info-section {
+.RummyStrategyHub-info-section {
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap as needed */
     justify-content: space-between; /* Space between the blocks */
     margin: 20px; /* Adjust margin as necessary */
 }
 
-.RummyVortex-info-block {
+.RummyStrategyHub-info-block {
     flex: 1; /* Each block will take equal space */
     min-width: 300px; /* Minimum width to maintain structure */
     margin: 10px; /* Space around blocks */
@@ -947,25 +948,25 @@ input[type="tel"]:focus {
     transition: transform 0.3s ease; /* Transition effect for hover */
 }
 
-.RummyVortex-info-block h3 {
+.RummyStrategyHub-info-block h3 {
     margin-top: 0; /* Remove top margin for h3 */
     color: #333; /* Darker text color */
 }
 
-.RummyVortex-content {
+.RummyStrategyHub-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Align icon and text at the top */
 }
 
-.RummyVortex-icon {
+.RummyStrategyHub-icon {
     font-size: 40px; /* Adjust icon size */
     color: #920000; /* Icon color */
     margin-right: 15px; /* Space between icon and text */
 }
 
 @media (max-width: 768px) {
-    .RummyVortex-info-section {
+    .RummyStrategyHub-info-section {
         flex-direction: column; /* Stack blocks on smaller screens */
     }
 }
@@ -1129,6 +1130,15 @@ input[type="tel"]:focus {
         margin-bottom: 15px;
         margin-top: 0;
     }
+    .header-link{
+        font-size: 18px;
+    }
+    .RummyStrategyHub-online-title{
+        font-size: 1.7rem;
+    }
+    .RummyStrategyHub-info-section{
+        margin: 0;
+    }
 }
 
 .how-play-content {
@@ -1257,13 +1267,13 @@ input[type="tel"]:focus {
     .rummy-experience-card:hover {
         transform: translateY(-5px);
     }
-    .rummyVortex-online-button:hover {
+    .RummyStrategyHub-online-button:hover {
         background-color: #d10000;
     }
     .btn-review:hover {
         background-color: #b5b5b5;
     }
-    .RummyVortex-info-block:hover {
+    .RummyStrategyHub-info-block:hover {
         transform: scale(1.02); /* Slight scale effect on hover */
     }
     .about-rummy__contact-button:hover {
@@ -1445,3 +1455,26 @@ input[type="tel"]:focus {
     cursor: pointer;
     font-size: 30px;
 }
+
+
+.thank-you-container {
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+  .thank-you-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .thank-you-container p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }

@@ -6,13 +6,13 @@ function showPopup() {
 function closePopup() {
     const popup = document.getElementById('popup');
     popup.style.display = 'none';
+    localStorage.setItem('popupShown', 'true');
 }
 
 window.onload = function () {
-    if (!sessionStorage.getItem('popupShown')) {
+    if (!localStorage.getItem('popupShown')) {
         setTimeout(() => {
             showPopup();
-            sessionStorage.setItem('popupShown', 'true');
         }, 2000);
     }
 

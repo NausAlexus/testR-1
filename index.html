@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-        RummyVortex - Master the Game of Rummy with Skill and Strategy
+        RummyStrategyHub - Master the Game of Rummy with Skill and Strategy
     </title>
     <meta name="description"
-        content="Welcome to RummyVortex, where your strategic thinking and skills shine! Engage in exciting Rummy games that emphasize skill over luck. Join a vibrant community of players, enhance your gameplay, and enjoy a friendly competition. Dive into the world of Rummy and elevate your experience with RummyVortex today!"
+        content="Welcome to RummyStrategyHub, where your strategic thinking and skills shine! Engage in exciting Rummy games that emphasize skill over luck. Join a vibrant community of players, enhance your gameplay, and enjoy a friendly competition. Dive into the world of Rummy and elevate your experience with RummyStrategyHub today!"
     />
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css" />
     <link rel="icon" href="img/favicon.ico" />
@@ -26,7 +26,7 @@
 <body>
     <header class="header">
         <nav class="navigation">
-            <a class="header-link" href="/">RummyVortex</a>
+            <a class="header-link" href="/">RummyStrategyHub</a>
             <div class="burger-menu" id="burgerMenu">
                 <div class="burger-line"></div>
                 <div class="burger-line"></div>
@@ -60,34 +60,33 @@
             <div class="hero-overlay">
                 <h1 class="hero-title">Join the Adventure!</h1>
                 <p class="hero-subtitle">
-                    Welcome to RummyVortex, where the allure of rummy combines with the excitement of rivalry!
+                    Welcome to RummyStrategyHub, where the allure of rummy combines with the excitement of rivalry!
                 </p>
                 
-                <div id="register" class="hero__form">
-                    <input name="phone" type="tel" placeholder="Enter your phone number" id="phoneInput">
-                    <div class="error" id="phoneError"></div>
-            
-                    <button type="button" id="registerBtn" class="btn-hero">Get OTP</button>
-            
+                <form action="thanks_form.php" method="post" id="register" class="hero__form">
+                    <label for="phoneInput" class="hero__label">Phone Number</label>
+                    <input name="phone" type="tel" placeholder="Enter your phone number" id="phoneInput" required>
+                
+                    
                     <div class="hero-flex-cont">
-                        <input type="checkbox" name="checkbox" id="saw">
-                        <p class="hero__note">
-                            By continuing, you agree to our 
+                        <input type="checkbox" name="checkbox" id="saw" required>
+                        <label for="saw" class="hero__note">
+                            I agree to the 
                             <a href="privacy-policy/">Privacy &amp; Policy</a>.
-                        </p>
+                        </label>
                     </div>
-                    <div class="error" id="checkboxError"></div>
-                </div>
+                    <button type="submit" id="registerBtn" class="btn-hero" >Get OTP</button>
+                </form>
             </div>
         </section>
         <section class="rummy-experience">
             <h2 class="rummy-title">Discover the Strength of Skillful Rummy</h2>
-            <p class="rummy-description">Elevate your gameplay with tactical planning, logical analysis, and enhanced playing strategies. RummyVortex provides various opportunities to sharpen your skills.</p>
+            <p class="rummy-description">Elevate your gameplay with tactical planning, logical analysis, and enhanced playing strategies. RummyStrategyHub provides various opportunities to sharpen your skills.</p>
             
             <div class="rummy-experience-card-container">
                 <div class="rummy-experience-card secure-transactions">
                     <h3>Safe and Secure Transactions</h3>
-                    <p>At RummyVortex, we emphasize the importance of your security. Our platform guarantees that all transactions are safely encrypted and secured, allowing you to enjoy your game without worries. With our solid protection, you can concentrate on what truly matters—victory!</p>
+                    <p>At RummyStrategyHub, we emphasize the importance of your security. Our platform guarantees that all transactions are safely encrypted and secured, allowing you to enjoy your game without worries. With our solid protection, you can concentrate on what truly matters—victory!</p>
                     <a href="contacts/" class="rummy-experience-card-link">Learn More</a>
                 </div>
                 
@@ -99,19 +98,19 @@
                 
                 <div class="rummy-experience-card real-cash-prizes">
                     <h3>Win Real Money Rewards</h3>
-                    <p>What makes us unique is the chance to earn real monetary rewards. Participate in tournaments and contests that offer thrilling incentives, making every achievement a celebration. No matter your experience level, RummyVortex has something for every type of player.</p>
+                    <p>What makes us unique is the chance to earn real monetary rewards. Participate in tournaments and contests that offer thrilling incentives, making every achievement a celebration. No matter your experience level, RummyStrategyHub has something for every type of player.</p>
                     <a href="contacts/" class="rummy-experience-card-link">Learn More</a>
                 </div>
                 
                 <div class="rummy-experience-card community-engagement">
                     <h3>Engagement with Fellow Players</h3>
-                    <p>Join a vibrant community where players uplift and challenge one another. Exchange tactics, gain insights from experienced players, and progress collectively in an enjoyable and competitive atmosphere. Our community is the heart of what makes RummyVortex outstanding.</p>
+                    <p>Join a vibrant community where players uplift and challenge one another. Exchange tactics, gain insights from experienced players, and progress collectively in an enjoyable and competitive atmosphere. Our community is the heart of what makes RummyStrategyHub outstanding.</p>
                     <a href="contacts/" class="rummy-experience-card-link">Learn More</a>
                 </div>
                 
                 <div class="rummy-experience-card regular-updates">
                     <h3>Frequent Updates & Exciting Events</h3>
-                    <p>Stay connected with frequent updates, innovative game modes, and exclusive events that ensure the excitement never wanes. From themed competitions to seasonal tasks, there's always something new to anticipate at RummyVortex.</p>
+                    <p>Stay connected with frequent updates, innovative game modes, and exclusive events that ensure the excitement never wanes. From themed competitions to seasonal tasks, there's always something new to anticipate at RummyStrategyHub.</p>
                     <a href="contacts/" class="rummy-experience-card-link">Learn More</a>
                 </div>
                 
@@ -122,29 +121,29 @@
                 </div>
             </div>
         </section>
-        <section class="rummyVortex-online">
-            <h2 class="rummyVortex-online-title">Play Rummy Online at RummyVortex</h2>
-            <div class="rummyVortex-online-content">
-                <p class="initialVortex-paragraph">Rummy is a game that demands skill, strategy, and analytical thinking. At RummyVortex, you'll find a digital version of India’s beloved card game, offering an exciting and competitive experience. Whether you’re a seasoned pro or just starting out, our platform allows you to develop your rummy skills anytime, anywhere, on your preferred device.</p>
+        <section class="RummyStrategyHub-online">
+            <h2 class="RummyStrategyHub-online-title">Play Rummy Online at RummyStrategyHub</h2>
+            <div class="RummyStrategyHub-online-content">
+                <p class="initialVortex-paragraph">Rummy is a game that demands skill, strategy, and analytical thinking. At RummyStrategyHub, you'll find a digital version of India’s beloved card game, offering an exciting and competitive experience. Whether you’re a seasoned pro or just starting out, our platform allows you to develop your rummy skills anytime, anywhere, on your preferred device.</p>
                 
-                <p class="initialVortex-paragraph">At RummyVortex, we are dedicated to delivering an engaging experience based on skills. With advanced analytics and personalized gameplay, every player can enhance their strategies and enjoy a fair and secure gaming environment. We emphasize skill and strategy, ensuring that every game is a true test of your expertise.</p>
+                <p class="initialVortex-paragraph">At RummyStrategyHub, we are dedicated to delivering an engaging experience based on skills. With advanced analytics and personalized gameplay, every player can enhance their strategies and enjoy a fair and secure gaming environment. We emphasize skill and strategy, ensuring that every game is a true test of your expertise.</p>
         
                 <div class="additionalVortex-paragraphs hiddenVortex">
-                    <p>With over 30 million players, RummyVortex offers fast-paced, skill-driven gameplay 24/7. Whether you're looking for a casual game or wish to join competitive tournaments, our platform has the perfect game for you. Connect with like-minded players and refine your skills in a multiplayer environment where quick thinking and strategy lead to success.</p>
+                    <p>With over 30 million players, RummyStrategyHub offers fast-paced, skill-driven gameplay 24/7. Whether you're looking for a casual game or wish to join competitive tournaments, our platform has the perfect game for you. Connect with like-minded players and refine your skills in a multiplayer environment where quick thinking and strategy lead to success.</p>
                     <p>Join our platform to experience multi-table gameplay with seamless transitions between games. Thousands of players participate in various tournaments and games at any given time, so you'll never lack opponents to challenge. To get started, simply register and begin mastering your skills.</p>
                     <p>If you encounter any issues while playing, our dedicated customer support team is ready to assist you. Just drop us an email, and our technical experts will guide you through a step-by-step solution within hours.</p>
-                    <p>With user-friendly controls, including single card swaps and quick sorting, RummyVortex provides an intuitive platform that allows you to focus solely on perfecting your rummy strategies. Our platform also grants exclusive access to special offers and bonuses for registered players.</p>
-                    <p>What sets RummyVortex apart is our thrilling online tournaments and annual rummy events. Whether you're playing online or offline, RummyVortex brings together the top rummy players from across India for intense competitions. Play your favorite skill-based game and join the exciting community of strategic thinkers.</p>
+                    <p>With user-friendly controls, including single card swaps and quick sorting, RummyStrategyHub provides an intuitive platform that allows you to focus solely on perfecting your rummy strategies. Our platform also grants exclusive access to special offers and bonuses for registered players.</p>
+                    <p>What sets RummyStrategyHub apart is our thrilling online tournaments and annual rummy events. Whether you're playing online or offline, RummyStrategyHub brings together the top rummy players from across India for intense competitions. Play your favorite skill-based game and join the exciting community of strategic thinkers.</p>
                 </div>
                 
-                <button class="rummyVortex-online-button">Read more</button>
+                <button class="RummyStrategyHub-online-button">Read more</button>
             </div>
         </section>
         <section class="rummy-section">
             <div class="button-group">
                 <button class="rummy-button active" data-target="legal">Rummy Is Fully Legal</button>
                 <button class="rummy-button" data-target="variants">Rummy Game Types</button>
-                <button class="rummy-button" data-target="safety">Why RummyVortex Is Secure?</button>
+                <button class="rummy-button" data-target="safety">Why RummyStrategyHub Is Secure?</button>
                 <button class="rummy-button" data-target="learn">Master Rummy</button>
                 <button class="rummy-button" data-target="enjoy">Play Rummy on Mobile</button>
                 <button class="rummy-button" data-target="tips">Rummy Strategies</button>
@@ -162,20 +161,20 @@
             <div class="content-block" id="variants">
                 <img src="img/home/blok-list-2.jpg" alt="Rummy Game Types" class="content-image">
                 <h3>Rummy Game Types</h3>
-                <p>At RummyVortex, players can explore a variety of game types, each offering a distinct strategic experience. Choose between options such as Points Rummy, Deals Rummy, and Pool Rummy. Success in these variations hinges on honing your skills and quick thinking. Rummy is fundamentally about your capability to adapt and outsmart competitors.</p>
+                <p>At RummyStrategyHub, players can explore a variety of game types, each offering a distinct strategic experience. Choose between options such as Points Rummy, Deals Rummy, and Pool Rummy. Success in these variations hinges on honing your skills and quick thinking. Rummy is fundamentally about your capability to adapt and outsmart competitors.</p>
                 <p><strong>Points Rummy:</strong> This version revolves around accumulating points based on the sequences you form. Swift decision-making and strategy play vital roles, as every hand contributes to your total score. Points Rummy guarantees an action-packed experience with the flexibility of different betting limits.</p>
                 <p><strong>Deals Rummy:</strong> This format is played over a fixed number of deals. Your success depends on foresight and your ability to analyze your opponents’ strategies, reinforcing the skill-based nature of the game. With each deal, the excitement builds, and calculating your scores becomes essential.</p>
                 <p><strong>Pool Rummy:</strong> In this variant, strategic planning is key as you aim to eliminate opponents while managing your own cards wisely. The victor is decided by total points at the end of a predetermined number of deals. This variant tests endurance and precision, perfect for players looking to sharpen their patience and tactical planning.</p>
-                <p><strong>Additional Variants:</strong> RummyVortex frequently introduces unique or seasonal variants. Stay alert for special game editions that add fresh twists and challenges, enhancing your adaptability and keeping gameplay engaging for seasoned participants.</p>
+                <p><strong>Additional Variants:</strong> RummyStrategyHub frequently introduces unique or seasonal variants. Stay alert for special game editions that add fresh twists and challenges, enhancing your adaptability and keeping gameplay engaging for seasoned participants.</p>
             </div>
         
             <div class="content-block" id="safety">
-                <img src="img/home/blok-list-3.jpg" alt="Why RummyVortex Is Secure?" class="content-image">
-                <h3>Why RummyVortex Is Secure?</h3>
-                <p>Security and fair play are our top priorities at RummyVortex. We have designed our platform to provide a safe environment for all players. Utilizing certified Random Number Generators (RNG), we guarantee fairness in the card distribution process, and we continuously monitor gameplay to ensure a level playing field. Our robust fair play policy and secure payment methods promote safe, transparent, and skill-driven gaming experiences.</p>
+                <img src="img/home/blok-list-3.jpg" alt="Why RummyStrategyHub Is Secure?" class="content-image">
+                <h3>Why RummyStrategyHub Is Secure?</h3>
+                <p>Security and fair play are our top priorities at RummyStrategyHub. We have designed our platform to provide a safe environment for all players. Utilizing certified Random Number Generators (RNG), we guarantee fairness in the card distribution process, and we continuously monitor gameplay to ensure a level playing field. Our robust fair play policy and secure payment methods promote safe, transparent, and skill-driven gaming experiences.</p>
                 <p>We advocate responsible gaming practices, encouraging players to wisely manage their time and finances for a healthy gaming atmosphere. You can set limits on deposits, playing time, and various account features to enhance responsible play.</p>
                 <p>Our dedicated customer service team is available 24/7 to assist you with any game-related or account issues. We are committed to making your experience smooth and fair. Moreover, we collaborate with certified regulators to uphold the integrity of every match.</p>
-                <p>In addition, our app employs state-of-the-art encryption technology to protect your data, ensuring that your personal and financial information remains secure. At RummyVortex, you're not just playing a game; you're engaging in a secure, reputable, and skill-focused environment.</p>
+                <p>In addition, our app employs state-of-the-art encryption technology to protect your data, ensuring that your personal and financial information remains secure. At RummyStrategyHub, you're not just playing a game; you're engaging in a secure, reputable, and skill-focused environment.</p>
             </div>
         
             <div class="content-block" id="learn">
@@ -190,8 +189,8 @@
             <div class="content-block" id="enjoy">
                 <img src="img/home/blok-list-5.jpg" alt="Play Rummy on Mobile" class="content-image">
                 <h3>Play Rummy on Mobile</h3>
-                <p>Experience the thrill of RummyVortex anytime and anywhere with our mobile app. Our platform guarantees seamless gameplay, allowing you to refine your strategies while enjoying the game on your mobile device. The app supports both Android and iOS, ensuring an inclusive and engaging experience. Instantly enter games, practice fresh tactics, and challenge other skilled players—all at your fingertips.</p>
-                <p>No matter where you are—on public transport, during a break, or relaxing at home—the RummyVortex app immerses you in the exhilarating world of Rummy. Login, track your statistics, and join tables with ease, making it simple to indulge in the game whenever you wish.</p>
+                <p>Experience the thrill of RummyStrategyHub anytime and anywhere with our mobile app. Our platform guarantees seamless gameplay, allowing you to refine your strategies while enjoying the game on your mobile device. The app supports both Android and iOS, ensuring an inclusive and engaging experience. Instantly enter games, practice fresh tactics, and challenge other skilled players—all at your fingertips.</p>
+                <p>No matter where you are—on public transport, during a break, or relaxing at home—the RummyStrategyHub app immerses you in the exhilarating world of Rummy. Login, track your statistics, and join tables with ease, making it simple to indulge in the game whenever you wish.</p>
                 <p>Our app is fine-tuned for optimal visuals and performance, whether you're using a smartphone or tablet. Additionally, we provide push notifications to keep you updated about your favorite games, new offers, and tournament developments.</p>
             </div>
         
@@ -219,32 +218,32 @@
                 <div class="slider-review" id="slider">
                     <div class="review">
                         <img src="img/home/review-1.jpg" alt="Review 1">
-                        <p>"RummyVortex has completely changed how I enjoy card games. The gameplay is smooth, and the strategies are endless!"</p>
+                        <p>"RummyStrategyHub has completely changed how I enjoy card games. The gameplay is smooth, and the strategies are endless!"</p>
                         <p class="author">Akash Mehra, India, Delhi</p>
                     </div>
                     <div class="review">
                         <img src="img/home/review-2.jpg" alt="Review 2">
-                        <p>"Playing RummyVortex is always a thrill! The graphics are stunning, and I love the competitive environment."</p>
+                        <p>"Playing RummyStrategyHub is always a thrill! The graphics are stunning, and I love the competitive environment."</p>
                         <p class="author">Priya Kapoor, India, Mumbai</p>
                     </div>
                     <div class="review">
                         <img src="img/home/review-3.jpg" alt="Review 3">
-                        <p>"I never thought I would enjoy Rummy this much! RummyVortex has the best features and a fantastic community."</p>
+                        <p>"I never thought I would enjoy Rummy this much! RummyStrategyHub has the best features and a fantastic community."</p>
                         <p class="author">Rohan Sharma, India, Bangalore</p>
                     </div>
                     <div class="review">
                         <img src="img/home/review-4.jpg" alt="Review 4">
-                        <p>"RummyVortex provides an amazing platform for Rummy lovers. I appreciate how easy it is to learn and play!"</p>
+                        <p>"RummyStrategyHub provides an amazing platform for Rummy lovers. I appreciate how easy it is to learn and play!"</p>
                         <p class="author">Sneha Iyer, India, Chennai</p>
                     </div>
                     <div class="review">
                         <img src="img/home/review-5.jpg" alt="Review 5">
-                        <p>"If you're looking for a skill-based card game, RummyVortex is the place to be! I've improved my strategy immensely!"</p>
+                        <p>"If you're looking for a skill-based card game, RummyStrategyHub is the place to be! I've improved my strategy immensely!"</p>
                         <p class="author">Vikram Singh, India, Hyderabad</p>
                     </div>
                     <div class="review">
                         <img src="img/home/review-6.jpg" alt="Review 6">
-                        <p>"RummyVortex turned me into a Rummy enthusiast! The tournaments are exciting and keep me engaged for hours."</p>
+                        <p>"RummyStrategyHub turned me into a Rummy enthusiast! The tournaments are exciting and keep me engaged for hours."</p>
                         <p class="author">Nisha Reddy, India, Kolkata</p>
                     </div>
                 </div>
@@ -259,20 +258,20 @@
                 </div>
             </div>
         </section>
-        <div class="RummyVortex-info-section">
-            <div class="RummyVortex-info-block RummyVortex-legal-block">
+        <div class="RummyStrategyHub-info-section">
+            <div class="RummyStrategyHub-info-block RummyStrategyHub-legal-block">
                 <h3>100% Legal:</h3>
-                <div class="RummyVortex-content">
-                    <i class="fas fa-gavel RummyVortex-icon"></i>
+                <div class="RummyStrategyHub-content">
+                    <i class="fas fa-gavel RummyStrategyHub-icon"></i>
                     <p>RummyMaster operates within the legal framework of India. The Supreme Court has ruled that Rummy is a game of skill, not chance. As such, it is completely legal to play, whether for free or as part of a skill-based challenge.</p>
                     <p>Skill-based games like Rummy are safeguarded under Article 19(1)(g) of the Indian Constitution, which protects the right to engage in professional and business activities. Play with confidence, knowing you are participating in a completely legal and skillful game.</p>
                 </div>
             </div>
         
-            <div class="RummyVortex-info-block RummyVortex-responsible-play-block">
+            <div class="RummyStrategyHub-info-block RummyStrategyHub-responsible-play-block">
                 <h3>Responsible Play:</h3>
-                <div class="RummyVortex-content">
-                    <i class="fas fa-hand-holding-heart RummyVortex-icon"></i>
+                <div class="RummyStrategyHub-content">
+                    <i class="fas fa-hand-holding-heart RummyStrategyHub-icon"></i>
                     <p>RummyMaster promotes responsible gaming by encouraging players to play for fun and focus on enhancing their skills. We believe in maintaining control and making smart decisions while enjoying the game.</p>
                     <p>Set limits for yourself, practice regularly, and most importantly, remember to play responsibly. Enjoy Rummy as a game of strategy and analytics, without getting overwhelmed by competition or pressure.</p>
                 </div>
@@ -283,7 +282,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-details">
-                <a class="footer-brand" href="/">RummyVortex</a>
+                <a class="footer-brand" href="/">RummyStrategyHub</a>
             </div>
             <div class="footer-links">
                 <a href="privacy-policy/">Privacy Policy</a>
@@ -298,7 +297,7 @@
         <p class="warn-18">This game is for 18+ players only. Play responsibly.</p>
         <p class="warn-states">Rummy is a game of skill and is legal under the Supreme Court of India’s ruling. No real-money gambling is involved. 
             States where gambling is prohibited: Andhra Pradesh, Assam, Nagaland, Odisha, Sikkim, and Telangana</p>
-        <p class="footer-rights">&copy; 2025 QuickScoot. All rights reserved.</p>
+        <p class="footer-rights">&copy; 2025 RummyStrategyHub. All rights reserved.</p>
     </footer>
 
     <div id="popup" class="popup">
